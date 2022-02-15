@@ -1,0 +1,9 @@
+{:paths ["src"]
+ :deps {org.clojure/clojure {:mvn/version "1.5.1"}
+        com.taoensso/encore {:mvn/version "2.127.0"}
+        com.taoensso/nippy  {:mvn/version "2.15.3"}
+        joda-time/joda-time           {:mvn/version "2.10.10"}
+        commons-logging/commons-logging     {:mvn/version "1.2"}
+        com.amazonaws/aws-java-sdk-dynamodb {:mvn/version "1.11.1034"
+                                             :exclusions [joda-time/joda-time
+                                                          commons-logging/commons-logging]}}}
